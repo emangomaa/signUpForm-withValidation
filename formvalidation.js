@@ -22,7 +22,7 @@ var passwordIcon = document.getElementsByTagName('i')[3]
 // validate first name
 firstNameInput.focus()
 firstNameInput.addEventListener('blur', function () {
-    if (firstNameInput.value.length == 0) {
+    if (firstNameInput.value.length < 3) {
         firstNameError.style.display = "block";
         firstNameInput.style.border = "1px solid hsl(0, 100%, 74%)";
         firstNameIcon.style.display = "block"
@@ -37,10 +37,11 @@ firstNameInput.addEventListener('blur', function () {
 
 // last name validation
 lastNameInput.addEventListener('blur', function () {
-    if (lastNameInput.value.length == 0) {
+    if (lastNameInput.value.length < 3) {
         lastNameError.style.display = "block";
         lastNameInput.style.border = "1px solid hsl(0, 100%, 74%)";
-        lastNameIcon.style.display = "block"
+        lastNameIcon.style.display = "block";
+        lastNameInput.focus();
     }
     else {
         lastNameError.style.display = "none";
@@ -55,7 +56,8 @@ emailInput.addEventListener('blur', function () {
     if (!(isEmailValid())) {
         emailError.style.display = "block";
         emailInput.style.border = "1px solid hsl(0, 100%, 74%)";
-        emailIcon.style.display = "block"
+        emailIcon.style.display = "block";
+        emailInput.focus();
     }
     else {
         emailError.style.display = "none";
@@ -66,10 +68,11 @@ emailInput.addEventListener('blur', function () {
 
 //password validation
 passwordInput.addEventListener('blur', function () {
-    if (passwordInput.value.length == 0) {
+    if (passwordInput.value.length < 6) {
         passwordError.style.display = "block";
         passwordInput.style.border = "1px solid hsl(0, 100%, 74%)";
-        passwordIcon.style.display = "block"
+        passwordIcon.style.display = "block";
+        passwordInput.focus();
     }
     else {
         passwordError.style.display = "none";

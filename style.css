@@ -43,6 +43,9 @@ body {
   border-radius: 10px;
   background-color: hsl(248, 32%, 49%);
 }
+.sing-up-form .col-6 .box-blue:hover{
+  cursor:pointer;
+}
 .sing-up-form .col-6 .box-blue span {
   color: #aaa;
   font-size: 14px;
