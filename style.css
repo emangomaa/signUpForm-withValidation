@@ -134,6 +134,12 @@ body {
   .sing-up-form .col-6 .box-blue {
     height: 70px;
   }
+  .sing-up-form .col-6 form .form-control small{
+    font-size: 6px;
+  }
+  .sing-up-form .col-6 form input[type="submit"]{
+    font-size: 12px;
+  }
 }
 @media (min-width: 374px) and (max-width: 767px) {
   .sing-up-form .row {
@@ -150,13 +156,19 @@ body {
   .sing-up-form .col-6 form {
     padding: 40px;
   }
+  .sing-up-form .col-6 form .form-control small{
+    font-size: 8px;
+  }
+  .sing-up-form .col-6 form input[type="submit"]{
+    font-size: 14px;
+  }
 }
 @media (min-width: 768px) and(max-width:991px) {
   .container {
     width: 750px;
   }
 }
-@media (min-with: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .container {
     width: 970px;
   }
